@@ -18,12 +18,33 @@
             return answer;
         }
 
+        public static int Sum(int num1, int num2, int num3)
+        {
+            var answer = num1 + num2 + num3;
+            return answer;
+        }
+
+        public static int Sum(int num1, int num2, int num3, int num4, int num5)
+        {
+            var answer = num1 + num2 + num3 + num4 + num5;
+            return answer;
+        }
+
         static void Main(string[] args)
         {
 
             var amountOfDogs = Sum(2, 4);
 
             var amountOfCats = Multiply(10, 2);
+
+            var amountOfBirds = Sum(6, 24, 13);
+
+            var bagsOfPetFood = Sum(1, 1, 1, 1, 1);
+
+            Console.WriteLine($" At Jim Bob's Pet Store & Supply, their current inventory is {amountOfDogs} puppies, {amountOfCats} cats, and {amountOfBirds} different types of birds.");
+            Console.WriteLine($"They also have {bagsOfPetFood} bags of feed.  Yee-haw, y'all!");
+
+
 
             //-----EXERCISE ONE----------------------
 
