@@ -4,6 +4,7 @@
 
         
     {
+        //-----EXERCISE TWO----------------------
 
         public static int Sum(int num1, int num2)
         {
@@ -41,7 +42,7 @@
 
             Console.WriteLine($"{name} went to the store to buy a {color} tshirt with {animal}s printed on it. {name} will be wearing that shirt to the {band} concert tonight!");
 
-            //-----EXERCISE TWO----------------------
+            
         }
     }
 }
