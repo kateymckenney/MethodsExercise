@@ -1,9 +1,32 @@
 ﻿namespace MethodsExercise
 {
     public class Program
+
+        
     {
+
+        public static int Sum(int num1, int num2)
+        {
+            var answer = num1 + num2;
+            return answer;
+        }
+
+        public static int Multiply(int num1, int num2)
+        {
+            var answer = num1 * num2;
+            return answer;
+        }
+
         static void Main(string[] args)
         {
+
+            var amountOfDogs = Sum(2, 4);
+
+            var amountOfCats = Multiply(10, 2);
+
+            //-----EXERCISE ONE----------------------
+
+
             Console.WriteLine("What is your name?");
             var name = Console.ReadLine();
 
@@ -17,6 +40,8 @@
             var band = Console.ReadLine();
 
             Console.WriteLine($"{name} went to the store to buy a {color} tshirt with {animal}s printed on it. {name} will be wearing that shirt to the {band} concert tonight!");
+
+            //-----EXERCISE TWO----------------------
         }
     }
 }
