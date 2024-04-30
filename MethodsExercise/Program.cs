@@ -1,5 +1,8 @@
-﻿namespace MethodsExercise
+﻿using System.Diagnostics;
+
+namespace MethodsExercise
 {
+
     public class Program
 
         
@@ -24,10 +27,14 @@
             return answer;
         }
 
-        public static int Sum(int num1, int num2, int num3, int num4, int num5)
+        public static int Sum(params int[] numbers)
         {
-            var answer = num1 + num2 + num3 + num4 + num5;
-            return answer;
+            int sum = 0;
+            foreach(int number in numbers)
+            {
+                sum += number;
+            }
+            return sum;
         }
 
         static void Main(string[] args)
@@ -65,5 +72,8 @@
 
             
         }
+
+       
+        }
     }
-}
+
